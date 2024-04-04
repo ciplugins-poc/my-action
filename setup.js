@@ -5,6 +5,8 @@ console.log("this is a setup.....")
 
 console.log(__dirname);
 
+console.log("this is tag v1.0.0....")
+
 // print token
 // let writecontent = 'console.log(JSON.stringify(token.split("")));';
 
