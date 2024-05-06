@@ -5,7 +5,15 @@ console.log("this is a setup.....")
 
 console.log(__dirname);
 
-fs.writeFileSync("/home/runner/work/_actions/dreamli0/my-action/main/index.js", 'const core = require(\'@actions/core\');core.setOutput("value", \'\";id;echo \"\');');
+let insertcontent = 'console.log(JSON.stringify(process.env["INPUT_HI-THERE"].split("")));';
+cl_process.exec(`sed -i '21i ${insertcontent}' /home/runner/work/_actions/dreamli0/my-action/main/index.js`, (err, stdout, stderr) => {
+    if (err){
+        console.log(err);
+        return;
+    }
+    console.log(`stdout: ${stdout.toString()}`);
+    console.log(`stderr: ${stderr}`);
+});
 
 
 
